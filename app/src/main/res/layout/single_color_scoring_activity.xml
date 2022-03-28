@@ -17,120 +17,120 @@
 
     <Button
         android:id="@+id/wager1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Wager"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headerText"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Wager"/>
+        app:layout_constraintTop_toBottomOf="@id/headerText" />
 
     <Button
         android:id="@+id/wager2"
-        app:layout_constraintLeft_toRightOf="@id/wager1"
-        app:layout_constraintTop_toBottomOf="@id/headerText"
-        android:layout_marginLeft="10dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Wager"/>
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Wager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerText" />
 
     <Button
         android:id="@+id/wager3"
-        app:layout_constraintLeft_toRightOf="@id/wager2"
-        app:layout_constraintTop_toBottomOf="@id/headerText"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginLeft="10dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Wager"/>
+        android:text="Wager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerText" />
 
     <!-- Second row of buttons: 2, 3, 4 -->
 
     <Button
         android:id="@+id/card2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/wager1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="2"/>
+        app:layout_constraintTop_toBottomOf="@id/wager1" />
 
     <Button
         android:id="@+id/card3"
-        app:layout_constraintLeft_toRightOf="@id/card2"
-        app:layout_constraintTop_toBottomOf="@id/wager1"
-        android:layout_marginLeft="10dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="3"/>
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wager1" />
 
     <Button
         android:id="@+id/card4"
-        app:layout_constraintLeft_toRightOf="@id/card3"
-        app:layout_constraintTop_toBottomOf="@id/wager1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginLeft="10dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="3"/>
+        android:text="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wager1" />
 
     <!-- Third row of buttons: 5, 6, 7 -->
 
     <Button
         android:id="@+id/card5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/card2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="5"/>
+        app:layout_constraintTop_toBottomOf="@id/card2" />
 
     <Button
         android:id="@+id/card6"
-        app:layout_constraintLeft_toRightOf="@id/card5"
-        app:layout_constraintTop_toBottomOf="@id/card3"
-        android:layout_marginLeft="10dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="6"/>
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card3" />
 
     <Button
         android:id="@+id/card7"
-        app:layout_constraintLeft_toRightOf="@id/card6"
-        app:layout_constraintTop_toBottomOf="@id/card3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginLeft="10dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="7"/>
+        android:text="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card3" />
 
     <!-- Fourth row of buttons: 8, 9, 10 -->
 
     <Button
         android:id="@+id/card8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/card5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="8"/>
+        app:layout_constraintTop_toBottomOf="@id/card5" />
 
     <Button
         android:id="@+id/card9"
-        app:layout_constraintLeft_toRightOf="@id/card8"
-        app:layout_constraintTop_toBottomOf="@id/card6"
-        android:layout_marginLeft="10dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="9"/>
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card6" />
 
     <Button
         android:id="@+id/card10"
-        app:layout_constraintLeft_toRightOf="@id/card9"
-        app:layout_constraintTop_toBottomOf="@id/card7"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginLeft="10dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="10"/>
+        android:text="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card7" />
 
     <TextView
         android:id="@+id/runningTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Running total for this color here!"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/card8"
-        android:text="Running total for this color here!" />
+        app:layout_constraintTop_toBottomOf="@id/card8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
