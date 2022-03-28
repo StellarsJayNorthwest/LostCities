@@ -17,7 +17,7 @@
 
     <Button
         android:id="@+id/wager1"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:text="Wager"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
 
     <Button
         android:id="@+id/wager2"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:text="Wager"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/wager3"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:layout_marginLeft="10dp"
         android:text="Wager"
@@ -45,7 +45,7 @@
 
     <Button
         android:id="@+id/card2"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:text="2"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +53,7 @@
 
     <Button
         android:id="@+id/card3"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:text="3"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -62,7 +62,7 @@
 
     <Button
         android:id="@+id/card4"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:layout_marginLeft="10dp"
         android:text="3"
@@ -73,7 +73,7 @@
 
     <Button
         android:id="@+id/card5"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:text="5"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
 
     <Button
         android:id="@+id/card6"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:text="6"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -90,7 +90,7 @@
 
     <Button
         android:id="@+id/card7"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:layout_marginLeft="10dp"
         android:text="7"
@@ -101,7 +101,7 @@
 
     <Button
         android:id="@+id/card8"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:text="8"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +109,7 @@
 
     <Button
         android:id="@+id/card9"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:text="9"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -118,7 +118,7 @@
 
     <Button
         android:id="@+id/card10"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="120dp"
         android:layout_marginLeft="10dp"
         android:text="10"
