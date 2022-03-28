@@ -77,4 +77,36 @@
         android:layout_height="wrap_content"
         android:text="0"/>
 
+    <!-- Hand number texts -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/player1hand1"
+        app:layout_constraintTop_toTopOf="@id/player1hand1"
+        app:layout_constraintRight_toLeftOf="@id/player2hand1"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/player1hand2"
+        app:layout_constraintTop_toTopOf="@id/player1hand2"
+        app:layout_constraintRight_toLeftOf="@id/player2hand2"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/player1hand3"
+        app:layout_constraintTop_toTopOf="@id/player1hand3"
+        app:layout_constraintRight_toLeftOf="@id/player2hand3"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

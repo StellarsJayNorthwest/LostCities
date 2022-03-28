@@ -11,7 +11,12 @@
         android:id="@+id/handTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text = "Hand 1" />
+        android:text=""
+        android:hint="handTitle text goes here"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/player1Name"
@@ -19,7 +24,8 @@
         app:layout_constraintTop_toBottomOf="@id/handTitle"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Player 1"/>
+        android:text=""
+        android:hint="player1Name"  />
 
     <Button
         android:id="@+id/player1Red"
@@ -81,7 +87,8 @@
         app:layout_constraintTop_toBottomOf="@id/handTitle"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Player 2"/>
+        android:text=""
+        android:hint="player1Name"  />
 
     <Button
         android:id="@+id/player2Red"

@@ -11,7 +11,10 @@
         android:id="@+id/headerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tap each of the cards %s has for %s" />
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:hint="Tap each of the cards player 1 has for red"
+        android:text="" />
 
     <!-- First row of buttons: three wagers -->
 

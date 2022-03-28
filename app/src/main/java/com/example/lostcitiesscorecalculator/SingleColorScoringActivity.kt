@@ -10,6 +10,7 @@ class SingleColorScoringActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = SingleColorScoringActivityBinding.inflate(layoutInflater)
+        binding.headerText.setText("Tap each of the cards TODO fill in player name and color")
         setContentView(binding.root)
     }
 }
