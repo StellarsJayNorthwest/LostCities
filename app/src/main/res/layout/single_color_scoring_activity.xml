@@ -18,113 +18,125 @@
 
     <!-- First row of buttons: three wagers -->
 
-    <Button
+    <ToggleButton
         android:id="@+id/wager1"
         android:layout_width="110dp"
         android:layout_height="120dp"
-        android:text="Wager"
+        android:textOn="Wager"
+        android:textOff="Wager"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headerText" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/wager2"
         android:layout_width="110dp"
         android:layout_height="120dp"
-        android:text="Wager"
+        android:textOn="Wager"
+        android:textOff="Wager"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headerText" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/wager3"
         android:layout_width="110dp"
         android:layout_height="120dp"
         android:layout_marginLeft="10dp"
-        android:text="Wager"
+        android:textOn="Wager"
+        android:textOff="Wager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headerText" />
 
     <!-- Second row of buttons: 2, 3, 4 -->
 
-    <Button
+    <ToggleButton
         android:id="@+id/card2"
         android:layout_width="110dp"
         android:layout_height="120dp"
-        android:text="2"
+        android:textOn="2"
+        android:textOff="2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/wager1" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/card3"
         android:layout_width="110dp"
         android:layout_height="120dp"
-        android:text="3"
+        android:textOn="3"
+        android:textOff="3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/wager1" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/card4"
         android:layout_width="110dp"
         android:layout_height="120dp"
         android:layout_marginLeft="10dp"
-        android:text="3"
+        android:textOn="4"
+        android:textOff="4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/wager1" />
 
     <!-- Third row of buttons: 5, 6, 7 -->
 
-    <Button
+    <ToggleButton
         android:id="@+id/card5"
         android:layout_width="110dp"
         android:layout_height="120dp"
-        android:text="5"
+        android:textOn="5"
+        android:textOff="5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card2" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/card6"
         android:layout_width="110dp"
         android:layout_height="120dp"
-        android:text="6"
+        android:textOn="6"
+        android:textOff="6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card3" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/card7"
         android:layout_width="110dp"
         android:layout_height="120dp"
         android:layout_marginLeft="10dp"
-        android:text="7"
+        android:textOn="7"
+        android:textOff="7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card3" />
 
     <!-- Fourth row of buttons: 8, 9, 10 -->
 
-    <Button
+    <ToggleButton
         android:id="@+id/card8"
         android:layout_width="110dp"
         android:layout_height="120dp"
-        android:text="8"
+        android:textOn="8"
+        android:textOff="8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card5" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/card9"
         android:layout_width="110dp"
         android:layout_height="120dp"
-        android:text="9"
+        android:textOn="9"
+        android:textOff="9"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card6" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/card10"
         android:layout_width="110dp"
         android:layout_height="120dp"
         android:layout_marginLeft="10dp"
-        android:text="10"
+        android:textOn="10"
+        android:textOff="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card7" />
 
@@ -132,7 +144,10 @@
         android:id="@+id/runningTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Running total for this color here!"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:hint="Tap each of the cards player 1 has for red"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card8" />
 

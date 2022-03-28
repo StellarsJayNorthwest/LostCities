@@ -15,8 +15,8 @@ class HandScoringActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = HandScoringActivityBinding.inflate(layoutInflater)
 
-        val player1Name = intent.getStringExtra("player1Name") ?: "BadPlayerName1"
-        val player2Name = intent.getStringExtra("player2Name") ?: "BadPlayerName2"
+        val player1Name = intent.getStringExtra("player1Name") ?: "Player 1"
+        val player2Name = intent.getStringExtra("player2Name") ?: "Player 2"
         val hand = intent.getIntExtra("hand", 0)
         assert(hand != 0)
 
