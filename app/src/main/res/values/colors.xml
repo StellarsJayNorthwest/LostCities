@@ -8,7 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Bright colors are used on scoring to indicate selection. Else use darks. -->
     <color name="lc_yellow_dark">#ffdaa520</color>
     <color name="lc_yellow_bright">#ffffd700</color>
+    <color name="lc_white_dark">#ff8b8989</color>
+    <color name="lc_white_bright">#ffcdc9c9</color>
+    <color name="lc_blue_dark">#ff000080</color>
+    <color name="lc_blue_bright">#ff0000cd</color>
+    <color name="lc_green_dark">#ff006400</color>
+    <color name="lc_green_bright">#ff32cd32</color>
+    <color name="lc_red_dark">#ffff4500</color>
+    <color name="lc_red_bright">#ffff0000</color>
+    <color name="lc_purple_dark">#ff9400d3</color>
+    <color name="lc_purple_bright">#ffa020f0</color>
 </resources>

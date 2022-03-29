@@ -66,6 +66,7 @@ class HandScoringActivity : AppCompatActivity() {
         assert(this.hand != 0)
 
         binding.handTitle.setText("Scoring for hand $hand")
+        binding.handTotalsTitle.setText("Hand $hand totals")
 
         this.player1SingleScoringButtons = mapOf(
             binding.player1Red to SingleColorScoring(this.hand, player1Name, "red"),

@@ -29,8 +29,8 @@
         android:hint="player1Name"  />
 
     <Button
-        android:id="@+id/player1Red"
-        android:backgroundTint="@android:color/holo_red_dark"
+        android:id="@+id/player1Yellow"
+        android:backgroundTint="@color/lc_yellow_bright"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/player1Name"
         android:layout_width="150dp"
@@ -38,35 +38,17 @@
         android:text="0"/>
 
     <Button
-        android:id="@+id/player1Green"
-        android:backgroundTint="@android:color/holo_green_dark"
+        android:id="@+id/player1White"
+        android:backgroundTint="@color/lc_white_bright"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/player1Red"
+        app:layout_constraintTop_toBottomOf="@id/player1Yellow"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="0"/>
 
     <Button
         android:id="@+id/player1Blue"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/player1Green"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="0"/>
-
-    <Button
-        android:id="@+id/player1White"
-        android:backgroundTint="@android:color/darker_gray"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/player1Blue"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="0"/>
-
-    <Button
-        android:id="@+id/player1Yellow"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/lc_blue_bright"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/player1White"
         android:layout_width="150dp"
@@ -74,10 +56,28 @@
         android:text="0"/>
 
     <Button
-        android:id="@+id/player1Purple"
-        android:backgroundTint="@android:color/holo_purple"
+        android:id="@+id/player1Green"
+        android:backgroundTint="@color/lc_green_bright"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/player1Yellow"
+        app:layout_constraintTop_toBottomOf="@id/player1Blue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/player1Red"
+        android:backgroundTint="@color/lc_red_bright"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player1Green"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/player1Purple"
+        android:backgroundTint="@color/lc_purple_bright"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player1Red"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="0"/>
@@ -92,8 +92,8 @@
         android:hint="player1Name"  />
 
     <Button
-        android:id="@+id/player2Red"
-        android:backgroundTint="@android:color/holo_red_dark"
+        android:id="@+id/player2Yellow"
+        android:backgroundTint="@color/lc_yellow_bright"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/player2Name"
         android:layout_width="150dp"
@@ -101,35 +101,17 @@
         android:text="0"/>
 
     <Button
-        android:id="@+id/player2Green"
-        android:backgroundTint="@android:color/holo_green_dark"
+        android:id="@+id/player2White"
+        android:backgroundTint="@color/lc_white_bright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/player2Red"
+        app:layout_constraintTop_toBottomOf="@id/player2Yellow"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="0"/>
 
     <Button
         android:id="@+id/player2Blue"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/player2Green"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="0"/>
-
-    <Button
-        android:id="@+id/player2White"
-        android:backgroundTint="@android:color/darker_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/player2Blue"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="0"/>
-
-    <Button
-        android:id="@+id/player2Yellow"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/lc_blue_bright"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/player2White"
         android:layout_width="150dp"
@@ -137,10 +119,28 @@
         android:text="0"/>
 
     <Button
-        android:id="@+id/player2Purple"
-        android:backgroundTint="@android:color/holo_purple"
+        android:id="@+id/player2Green"
+        android:backgroundTint="@color/lc_green_bright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/player2Yellow"
+        app:layout_constraintTop_toBottomOf="@id/player2Blue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/player2Red"
+        android:backgroundTint="@color/lc_red_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player2Green"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/player2Purple"
+        android:backgroundTint="@color/lc_purple_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player2Red"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="0"/>
@@ -161,9 +161,11 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/handTotalsTitle"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Hand totals"
+        android:text=""
+        android:hint="Hand N totals"
         android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
