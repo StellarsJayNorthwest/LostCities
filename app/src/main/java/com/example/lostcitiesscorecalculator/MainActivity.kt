@@ -33,10 +33,10 @@ class MainActivity : AppCompatActivity() {
             if (it.resultCode == Activity.RESULT_OK) {
                 val player1Score = it.data?.getIntExtra("player1Score", 0)!!
                 val player2Score = it.data?.getIntExtra("player2Score", 0)!!
-                val hand = it.data?.getIntExtra("hand", 0)!!
+                val handIndex = it.data?.getIntExtra("handIndex", 0)!!
 
-                player1HandButtons[hand].setText(player1Score.toString())
-                player2HandButtons[hand].setText(player2Score.toString())
+                player1HandButtons[handIndex].setText(player1Score.toString())
+                player2HandButtons[handIndex].setText(player2Score.toString())
 
                 val player1Total = computePlayerScore(true)
                 val player2Total = computePlayerScore(false)
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                     var winner =
                         if (player1Total > player2Total) binding.player1Name.text else binding.player2Name.text
 
-                    if (hand < 2) {
+                    if (handIndex < 2) {
                         message = "$winner is in the lead!"
                     } else {
                         message = "$winner is victorious!"
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, HandScoringActivity::class.java)
                     intent.putExtra("player1Name", binding.player1Name.text)
                     intent.putExtra("player2Name", binding.player2Name.text)
-                    intent.putExtra("hand", handIndex + 1)
+                    intent.putExtra("handIndex", handIndex)
                     intent.putExtra("buttonId", button.id)
                     getHandScoringActivityResult.launch(intent)
                 }

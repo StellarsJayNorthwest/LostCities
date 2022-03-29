@@ -10,7 +10,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.example.lostcitiesscorecalculator.databinding.HandScoringActivityBinding
 
 // The SingleColorScoring class is used to set up a map of scoring buttons.
-data class SingleColorScoring(val hand: Int, val playerName: String, val color: String) {
+data class SingleColorScoring(val handIndex: Int, val playerName: String, val color: String) {
 }
 
 class HandScoringActivity : AppCompatActivity() {
@@ -22,7 +22,7 @@ class HandScoringActivity : AppCompatActivity() {
 
     private var buttonId = 0
 
-    private var hand = 0
+    private var handIndex = 0
 
     // This function totals up all of the buttons for one player, and then sets the total TextView
     // for that player to contain the total score and returns the total score.
@@ -62,36 +62,36 @@ class HandScoringActivity : AppCompatActivity() {
         val player2Name = intent.getStringExtra("player2Name") ?: "Player 2"
         this.buttonId = intent.getIntExtra("buttonId", 0)
         assert(this.buttonId != 0)
-        this.hand = intent.getIntExtra("hand", 0)
-        assert(this.hand != 0)
+        this.handIndex = intent.getIntExtra("handIndex", 0)
+        assert(this.handIndex >= 0 && this.handIndex <= 2)
 
         binding.player1Name.setText(player1Name)
         binding.player2Name.setText(player2Name)
-        binding.handTitle.setText("Scoring for hand $hand")
-        binding.handTotalsTitle.setText("Hand $hand totals")
+        binding.handTitle.setText("Scoring for hand ${handIndex + 1}")
+        binding.handTotalsTitle.setText("Hand ${handIndex + 1} totals")
 
         this.player1SingleScoringButtons = mapOf(
-            binding.player1Red to SingleColorScoring(this.hand, player1Name, "red"),
-            binding.player1Green to SingleColorScoring(this.hand, player1Name, "green"),
-            binding.player1Blue to SingleColorScoring(this.hand, player1Name, "blue"),
-            binding.player1White to SingleColorScoring(this.hand, player1Name, "white"),
-            binding.player1Yellow to SingleColorScoring(this.hand, player1Name, "yellow"),
-            binding.player1Purple to SingleColorScoring(this.hand, player1Name, "purple"),
+            binding.player1Red to SingleColorScoring(this.handIndex, player1Name, "red"),
+            binding.player1Green to SingleColorScoring(this.handIndex, player1Name, "green"),
+            binding.player1Blue to SingleColorScoring(this.handIndex, player1Name, "blue"),
+            binding.player1White to SingleColorScoring(this.handIndex, player1Name, "white"),
+            binding.player1Yellow to SingleColorScoring(this.handIndex, player1Name, "yellow"),
+            binding.player1Purple to SingleColorScoring(this.handIndex, player1Name, "purple"),
         )
 
         this.player2SingleScoringButtons = mapOf(
-            binding.player2Red to SingleColorScoring(this.hand, player2Name, "red"),
-            binding.player2Green to SingleColorScoring(this.hand, player2Name, "green"),
-            binding.player2Blue to SingleColorScoring(this.hand, player2Name, "blue"),
-            binding.player2White to SingleColorScoring(this.hand, player2Name, "white"),
-            binding.player2Yellow to SingleColorScoring(this.hand, player2Name, "yellow"),
-            binding.player2Purple to SingleColorScoring(this.hand, player2Name, "purple")
+            binding.player2Red to SingleColorScoring(this.handIndex, player2Name, "red"),
+            binding.player2Green to SingleColorScoring(this.handIndex, player2Name, "green"),
+            binding.player2Blue to SingleColorScoring(this.handIndex, player2Name, "blue"),
+            binding.player2White to SingleColorScoring(this.handIndex, player2Name, "white"),
+            binding.player2Yellow to SingleColorScoring(this.handIndex, player2Name, "yellow"),
+            binding.player2Purple to SingleColorScoring(this.handIndex, player2Name, "purple")
         )
 
         for (b in player1SingleScoringButtons + player2SingleScoringButtons) {
             b.key.setOnClickListener {
                 val intent = Intent(this, SingleColorScoringActivity::class.java)
-                intent.putExtra("hand", b.value.hand)
+                intent.putExtra("handIndex", b.value.handIndex)
                 intent.putExtra("playerName", b.value.playerName)
                 intent.putExtra("color", b.value.color)
                 intent.putExtra("buttonId", b.key.id)
@@ -116,7 +116,7 @@ class HandScoringActivity : AppCompatActivity() {
         val intent = Intent()
         intent.putExtra("player1Score", computePlayerScore(true))
         intent.putExtra("player2Score", computePlayerScore(false))
-        intent.putExtra("hand", this.hand)
+        intent.putExtra("handIndex", this.handIndex)
         setResult(Activity.RESULT_OK, intent)
     }
 }
