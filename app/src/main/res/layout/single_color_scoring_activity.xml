@@ -11,39 +11,41 @@
         android:id="@+id/headerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:hint="Tap each of the cards player 1 has for red"
-        android:text="" />
+        android:gravity="center"
+        android:text=""
+        android:textSize="25dp" />
 
     <!-- First row of buttons: three wagers -->
 
     <ToggleButton
         android:id="@+id/wager1"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
-        android:textOn="Wager"
+        android:textSize="20dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:textOff="Wager"
+        android:textOn="Wager"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headerText" />
 
     <ToggleButton
         android:id="@+id/wager2"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
-        android:textOn="Wager"
+        android:textSize="20dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:textOff="Wager"
+        android:textOn="Wager"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headerText" />
 
     <ToggleButton
         android:id="@+id/wager3"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
+        android:textSize="20dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:layout_marginLeft="10dp"
-        android:textOn="Wager"
         android:textOff="Wager"
+        android:textOn="Wager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headerText" />
 
@@ -51,30 +53,33 @@
 
     <ToggleButton
         android:id="@+id/card2"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
-        android:textOn="2"
+        android:textSize="25dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:textOff="2"
+        android:textOn="2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/wager1" />
 
     <ToggleButton
         android:id="@+id/card3"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
-        android:textOn="3"
+        android:textSize="25dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:textOff="3"
+        android:textOn="3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/wager1" />
 
     <ToggleButton
         android:id="@+id/card4"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
+        android:textSize="25dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:layout_marginLeft="10dp"
-        android:textOn="4"
         android:textOff="4"
+        android:textOn="4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/wager1" />
 
@@ -82,30 +87,33 @@
 
     <ToggleButton
         android:id="@+id/card5"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
-        android:textOn="5"
+        android:textSize="25dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:textOff="5"
+        android:textOn="5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card2" />
 
     <ToggleButton
         android:id="@+id/card6"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
-        android:textOn="6"
+        android:textSize="25dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:textOff="6"
+        android:textOn="6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card3" />
 
     <ToggleButton
         android:id="@+id/card7"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
+        android:textSize="25dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:layout_marginLeft="10dp"
-        android:textOn="7"
         android:textOff="7"
+        android:textOn="7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card3" />
 
@@ -113,30 +121,33 @@
 
     <ToggleButton
         android:id="@+id/card8"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
-        android:textOn="8"
+        android:textSize="25dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:textOff="8"
+        android:textOn="8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card5" />
 
     <ToggleButton
         android:id="@+id/card9"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
-        android:textOn="9"
+        android:textSize="25dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:textOff="9"
+        android:textOn="9"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card6" />
 
     <ToggleButton
         android:id="@+id/card10"
-        android:layout_width="110dp"
-        android:layout_height="120dp"
+        android:textSize="25dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:layout_marginLeft="10dp"
-        android:textOn="10"
         android:textOff="10"
+        android:textOn="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card7" />
 
@@ -144,10 +155,10 @@
         android:id="@+id/runningTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:hint="Tap each of the cards player 1 has for red"
+        android:gravity="center"
+        android:hint=""
         android:text=""
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card8" />
 
@@ -155,10 +166,10 @@
         android:id="@+id/doneButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Finished scoring this color"
         android:layout_marginBottom="20dp"
+        android:text="Finished scoring this color"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
