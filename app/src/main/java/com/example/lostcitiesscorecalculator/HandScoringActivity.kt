@@ -65,6 +65,8 @@ class HandScoringActivity : AppCompatActivity() {
         this.hand = intent.getIntExtra("hand", 0)
         assert(this.hand != 0)
 
+        binding.player1Name.setText(player1Name)
+        binding.player2Name.setText(player2Name)
         binding.handTitle.setText("Scoring for hand $hand")
         binding.handTotalsTitle.setText("Hand $hand totals")
 
